@@ -1,4 +1,9 @@
-## AutoIndex PHP Script (version 2.x)
+## AutoIndex PHP Script (version 2.2.4)
+
+### Updated to run using newer versions of PHP (v7, v8)
+
+> repository: [github.com/hostflux/AutoIndex](https://github.com/hostflux/AutoIndex)
+
 ### by Justin Hagstrom
 AutoIndex is provided under the terms of the GNU General Public License (GPL).
 
