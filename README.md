@@ -3,6 +3,8 @@
 ### Updated to run using newer versions of PHP (v7, v8)
 
 > repository: [github.com/hostflux/AutoIndex](https://github.com/hostflux/AutoIndex)
+>
+> download: [github.com/hostflux/AutoIndex/archive/refs/heads/master.zip](https://github.com/hostflux/AutoIndex/archive/refs/heads/master.zip)
 
 ### by Justin Hagstrom
 AutoIndex is provided under the terms of the GNU General Public License (GPL).
