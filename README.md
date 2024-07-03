@@ -2,7 +2,7 @@
 
 ### Updated to run using newer versions of PHP (v7, v8)
 
-> [Download zip](https://github.com/hostflux/AutoIndex/archive/refs/heads/master.zip)
+> [Download ZIP](https://github.com/hostflux/AutoIndex/archive/refs/heads/master.zip)
 
 ### by Justin Hagstrom
 AutoIndex is provided under the terms of the GNU General Public License (GPL).
