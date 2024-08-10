@@ -1,4 +1,4 @@
-### Change Log
+## Change Log
 
 **Legend**:  
 (+) Added feature  
@@ -7,7 +7,7 @@
 (\*) Improved/changed feature  
 ( ) Non-code change
 
-#### [AutoIndex PHP Script](https://github.com/hostflux/AutoIndex), by [Hostflux LLC](https://hostflux.com)
+### [AutoIndex PHP Script](https://github.com/hostflux/AutoIndex), by [Hostflux LLC](https://hostflux.com)
 
 **Version 2.2.4 revision 2** (2021-Jun-04)  
 (+) Added support for PHP 8.0.x and higher
@@ -15,7 +15,7 @@
 **Version 2.2.4 revision 1** (2018-Nov-13)  
 (+) Added support for PHP 7.2.x and higher
 
-#### [AutoIndex PHP Script](https://github.com/justinhagstrom/AutoIndex), by [Justin Hagstrom](http://autoindex.sourceforge.net)
+### [AutoIndex PHP Script](https://github.com/justinhagstrom/AutoIndex), by [Justin Hagstrom](http://autoindex.sourceforge.net)
 
 **Version 2.2.4** (2007-Nov-09)  
 (!) Fixed DOS bug  
