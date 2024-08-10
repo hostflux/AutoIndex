@@ -1,12 +1,12 @@
-# AutoIndex PHP Script (version 2.2.4 revision 2)
+# AutoIndex PHP Script
 
-## Revised for latest version of PHP
+## AutoIndex PHP Script (version 2.2.4 revised)
 
 ### by [Hostflux LLC](https://hostflux.com)
 
-`https://github.com/hostflux/AutoIndex`
+**https://github.com/hostflux/AutoIndex**
 
-> [Download ZIP](https://github.com/hostflux/AutoIndex/archive/refs/heads/master.zip)
+#### Revised for latest version of PHP - [download ZIP](https://github.com/hostflux/AutoIndex/archive/refs/heads/master.zip)
 
 ## AutoIndex PHP Script (version 2.2.4)
 
