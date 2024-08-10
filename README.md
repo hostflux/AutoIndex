@@ -1,6 +1,6 @@
-# AutoIndex PHP Script (version 2.2.4 revised)
+# AutoIndex PHP Script (version 2.2.4 revision 2)
 
-## Revised for latest versions of PHP
+## Revised for latest version of PHP
 
 ### by [Hostflux LLC](https://hostflux.com)
 
