@@ -2,7 +2,7 @@
 
 ## Revised for latest versions of PHP
 
-### by Hostflux LLC
+### by [Hostflux LLC](https://hostflux.com)
 
 `https://github.com/hostflux/AutoIndex`
 
