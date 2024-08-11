@@ -4,9 +4,11 @@
 
 ### by [Hostflux LLC](https://hostflux.com)
 
-**The project, which was previously depreciated, has been revised for use with the latest version of PHP - [download ZIP](https://github.com/hostflux/AutoIndex/archive/refs/heads/master.zip)**
+**The project, which was previously depreciated, has been revised for use with the latest version of PHP.**
 
-**https://github.com/hostflux/AutoIndex**
+GitHub repository: https://github.com/hostflux/AutoIndex
+
+Download ZIP: https://github.com/hostflux/AutoIndex/archive/refs/heads/master.zip
 
 ## AutoIndex PHP Script (version 2.2.4)
 
