@@ -1,3 +1,5 @@
+# AutoIndex PHP Script
+
 ## Change Log
 
 **Legend**:  
