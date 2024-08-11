@@ -13,7 +13,7 @@
 (+) Added support for PHP 8.0.x and higher
 
 **Version 2.2.4 revision 1** (2018-Nov-13)  
-(+) Added support for PHP 7.2.x and higher
+(+) Added support for PHP 7.0.x and higher
 
 ### [AutoIndex PHP Script](https://github.com/justinhagstrom/AutoIndex), by [Justin Hagstrom](http://autoindex.sourceforge.net)
 
