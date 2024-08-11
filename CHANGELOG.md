@@ -94,4 +94,6 @@ Complete rewrite from version 1.0:
     (+) Each user account can have its own home directory  
     (\*) Passwords are stored as a sha-1 hash rather than md5 (this is slightly more secure)
 
+---
+
 **[AutoIndex PHP Script](https://github.com/hostflux/AutoIndex)**
