@@ -56,15 +56,15 @@
 (+) Added a feature to let moderators/admins change their own password
 
 **Version 2.0.7** (2005-Jan-14)  
-(-) Fixed _file\_description_ feature
+(-) Fixed _file_description_ feature
 
 **Version 2.0.6** (2005-Jan-04)  
 (+) Admins are able to copy files from other servers (similar to "wget")  
 ( ) Added Thai and Arabic translations
 
 **Version 2.0.5** (2004-Sep-02)  
-(+) When _force\_download_ is on, the MIME-type sent depends on the file extension  
-(\*) Using _hidden\_files_ to only show certain files no longer restricts directories
+(+) When _force_download_ is on, the MIME-type sent depends on the file extension  
+(\*) Using _hidden_files_ to only show certain files no longer restricts directories
 
 **Version 2.0.4** (2004-Aug-17)  
 (\*) When reconfiguring the script, the current settings are selected instead of the defaults  
@@ -76,12 +76,12 @@
 
 **Version 2.0.2** (2004-Jul-13)  
 (\*) All output is XHTML 1.1 compliant  
-(\*) The _do\_every_ template command now does not include the last file listed
+(\*) The _do_every_ template command now does not include the last file listed
 
 **Version 2.0.1** (2004-Jul-05)  
 (+) Added directory cache feature  
 (\*) Added _include_ command to the template system  
-(-) Fixed search page bug when _download\_count_ was on
+(-) Fixed search page bug when _download_count_ was on
 
 **Version 2.0.0** (2004-Jun-24)
 
