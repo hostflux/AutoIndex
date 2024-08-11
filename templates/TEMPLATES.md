@@ -17,9 +17,11 @@ Info about the current directory:
 
 All words from the language file:
 
-| Variable      | Description                       |
-| ------------- | --------------------------------- |
-| `{words:foo}` | see language file for all options |
+| Variable      | Description      |
+| ------------- | ---------------- |
+| `{words:foo}` | configuration options |
+
+	Refer to the relevant language file for all options
 
 All settings from the config file:
 
@@ -27,7 +29,7 @@ All settings from the config file:
 | -------------- | --------------------- |
 | `{config:foo}` | configuration options |
 
-	See AutoIndex.conf.php for all options
+	Refer to AutoIndex.conf.php for all options
 
 Another specific file can be included using the {include} command:
 
