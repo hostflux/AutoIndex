@@ -87,7 +87,7 @@ Properties for individual files:
 	{file:a_time}				date and time accessed
 	{file:m_time}				date and time modified
 	{file:num_subfiles}			for a directory, the number of files it contains
-		Use {file:if:is_real_dir}{file:num_subfiles}{end if}
+		use {file:if:is_real_dir}{file:num_subfiles}{end if}
 	{file:thumbnail}			for images, it will display a thumbnail
 	{file:md5_link}				a link to get the md5sum of the file
 	{file:downloads}			the number of times this file has been downloaded
@@ -99,7 +99,7 @@ Properties for individual files:
 	{file:if:is_dir} ... {end if}		true if it is a folder or link to parent directory
 	{file:if:is_real_dir} ... {end if}	true if it is a folder
 	{file:if:is_parent_dir} ... {end if}	true if it is a link to parent directory
-	{do_every:x} ... {end do_every} where x is a number
-		The code in between will be displayed every x files
+	{do_every:x} ... {end do_every}		where x is a number
+		the code in between will be displayed every x files
 
 **[AutoIndex PHP Script](https://github.com/hostflux/AutoIndex)**
