@@ -1,105 +1,129 @@
 # AutoIndex PHP Script
 
-## Template Variables
+### Template Variables
 
-This is a list of all the variables that can be used in the template files.
+**This is a list of all the variables that can be used in the template files.**
 
-### global\_header.tpl / global\_footer.tpl
+### global_header.tpl / global_footer.tpl
 
 Info about the current directory:
 
-	{info:dir}		the path of the current directory, including the base dir
-	{info:subdir}		the path of the current directory, not including the base dir
-	{info:version}		the version of AutoIndex
-	{info:page_time}	the time (in milliseconds) it took to generate the page
+| Variable           | Description                                           |
+| ------------------ | ----------------------------------------------------- |
+| `{info:dir}`       | path of the current directory, including the base dir |
+| `{info:subdir}`    | path of the current directory, excluding the base dir |
+| `{info:version}`   | version of AutoIndex                                  |
+| `{info:page_time}` | time (in milliseconds) to generate the page           |
 
 All words from the language file:
 
-	{words:foo}
-	... see language file for all options
+| Variable      | Description                       |
+| ------------- | --------------------------------- |
+| `{words:foo}` | see language file for all options |
 
 All settings from the config file:
 
-	{config:foo}
-	... see AutoIndex.conf.php for all options
+| Variable       | Description           |
+| -------------- | --------------------- |
+| `{config:foo}` | configuration options |
 
-You can include another specific file using the {include} command:
+	See AutoIndex.conf.php for all options
 
-	{include:filename}
+Another specific file can be included using the {include} command:
 
-Anything between `/* */` will not be displayed in the HTML output.
+| Variable             | Description                                                       |
+| -------------------- | ----------------------------------------------------------------- |
+| `{include:filename}` | anything between `/* */` will not be displayed in the HTML output |
 
-### table\_header.tpl / table\_footer.tpl
+### table_header.tpl / table_footer.tpl
 
 All previously mentioned variables, plus:
 
 Info about current directory:
 
-	{info:path_nav}
-	{info:total_files}
-	{info:total_folders}
-	{info:total_size}
-	{info:total_downloads}
-	{info:search_box}
-	{info:login_box}
-	{info:archive_link}
-	{info:previous_page_link}
-	{info:next_page_link}
-	{info:current_page_number}
-	{info:last_page_number}
+| Variable                     | Description                        |
+| ---------------------------- | ---------------------------------- |
+| `{info:path_nav}`            | display navagable path             |
+| `{info:total_files}`         | display total files                |
+| `{info:total_folders}`       | display total folders              |
+| `{info:total_size}`          | display total size                 |
+| `{info:total_downloads}`     | display total downloads            |
+| `{info:search_box}`          | display search box                 |
+| `{info:login_box}`           | display login box                  |
+| `{info:archive_link}`        | display archive link               |
+| `{info:previous_page_link}`  | display link to the previous page  |
+| `{info:next_page_link}`      | display link to the next page      |
+| `{info:current_page_number}` | display number of the current page |
+| `{info:last_page_number}`    | display number of the last page    |
 
 If-statements:
 
-	{if:show_dir_size}
-	{if:search_enabled}
-	{if:use_login_system}
-	{if:must_login_to_download}
-	{if:days_new}
-	{if:thumbnail_height}
-	{if:log_file}
-	{if:description_file}
-	{if:download_count}
-	{if:entries_per_page}
+| Variable                      | Description                                |
+| ----------------------------- | ------------------------------------------ |
+| `{if:show_dir_size}`          | `show_dir_size` = true / false             |
+| `{if:search_enabled}`         | `search_enabled` = true / false            |
+| `{if:use_login_system}`       | `use_login_system` = true / false          |
+| `{if:must_login_to_download}` | `must_login_to_download` = true / false    |
+| `{if:days_new}`               | `days_new` = true / false                  |
+| `{if:thumbnail_height}`       | `thumbnail_height` = pixels / false        |
+| `{if:icon_path}`              | `icon_path` = icon path / false            |
+| `{if:log_file}`               | `log_file` = file name / false [1]         |
+| `{if:description_file}`       | `description_file` = file name / false [2] |
+| `{if:download_count}`         | `download_count` = file name / false [3]   |
+| `{if:entries_per_page}`       | `entries_per_page` = number / false        |
 
-To end an if-statement, use `{end if:varibale}`  
-For example, `{if:days_new} ... {end if:days_new}`
+	[1] File name to store visitor traffic
+	[2] File name with folder and/or file descriptions
+	[3] File name to store downloads
+ 	
+	To end an if-statement, use {end if:varibale}
+	For example, {if:days_new} ... {end if:days_new}
+
+	Use AutoIndex.conf.php for variable settings
 
 Sort modes:
 
-	{sort:filename}
-	{sort:size}
-	{sort:m_time}
-	{sort:description}
-	{sort:downloads}
+| Variable             | Description                 |
+| -------------------- | --------------------------- |
+| `{sort:filename}`    | sort on file name           |
+| `{sort:size}`        | sort on size                |
+| `{sort:m_time}`      | sort on time                |
+| `{sort:description}` | sort on description         |
+| `{sort:downloads}`   | sort on number of downloads |
 
-### each\_file.tpl
+### each_file.tpl
 
 All previously mentioned variables, plus:
 
 Properties for individual files:
 
-	{file:filename}				the name of the file or folder
-	{file:link}				the link to the file (using the ?dir and ?file parameters in the URL)
-	{file:file_ext}				the file extension ("dir" for a directory)
-	{file:size}				the size (formatted as a string)
-	{file:bytes}				the size (in bytes)
-	{file:date}				the date modified (formatted as a string)
-	{file:a_time}				date and time accessed
-	{file:m_time}				date and time modified
-	{file:num_subfiles}			for a directory, the number of files it contains
-		use {file:if:is_real_dir}{file:num_subfiles}{end if}
-	{file:thumbnail}			for images, it will display a thumbnail
-	{file:md5_link}				a link to get the md5sum of the file
-	{file:downloads}			the number of times this file has been downloaded
-	{file:description}			the description of the current file
-	{file:icon}				the icon image for the filetype
-	{file:parent_dir}			the name of the file's parent directory
-	{file:tr_class}				this returns "light_row" or "dark_row" for every other file
-	{file:if:is_file} ... {end if}		true if it is a file
-	{file:if:is_dir} ... {end if}		true if it is a folder or link to parent directory
-	{file:if:is_real_dir} ... {end if}	true if it is a folder
-	{file:if:is_parent_dir} ... {end if}	true if it is a link to parent directory
-	{do_every:x} ... {end do_every}		where x is a number
-		the code in between will be displayed every x files
+| Variable                               | Description                                                       |
+| -------------------------------------- | ----------------------------------------------------------------- |
+| `{file:filename}`                      | name of the file or folder                                        |
+| `{file:link}`                          | link to the file (using the ?dir and ?file parameters in the URL) |
+| `{file:file_ext}`                      | file extension ("dir" for a directory)                            |
+| `{file:size}`                          | size (formatted as a string)                                      |
+| `{file:bytes}`                         | size (in bytes)                                                   |
+| `{file:date}`                          | date modified (formatted as a string)                             |
+| `{file:a_time}`                        | date and time accessed                                            |
+| `{file:m_time}`                        | date and time modified                                            |
+| `{file:num_subfiles}`                  | for a directory, the number of files it contains [1]	             |
+| `{file:thumbnail}`                     | for images, it will display a thumbnail                           |
+| `{file:md5_link}`                      | link to get the md5sum of the file                                |
+| `{file:downloads}`                     | number of times this file has been downloaded                     |
+| `{file:description}`                   | description of the current file                                   |
+| `{file:icon}`                          | icon image for the filetype                                       |
+| `{file:parent_dir}`                    | name of the file's parent directory                               |
+| `{file:tr_class}`                      | this returns "light_row" or "dark_row" for every other file       |
+| `{file:if:is_file} ... {end if}`       | true if it is a file                                              |
+| `{file:if:is_dir} ... {end if}`        | true if it is a folder or link to parent directory                |
+| `{file:if:is_real_dir} ... {end if}`   | true if it is a folder                                            |
+| `{file:if:is_parent_dir} ... {end if}` | true if it is a link to parent directory                          |
+| `{do_every:x} ... {end do_every}`      | where x is a number [2]                                           |
+
+	[1] Use {file:if:is_real_dir}{file:num_subfiles}{end if}
+	[2] The code in between will be displayed every x files
+
+---
 
 **[AutoIndex PHP Script](https://github.com/hostflux/AutoIndex)**
