@@ -8,9 +8,9 @@ This is a list of all the variables that can be used in the template files.
 
 Info about the current directory:
 
-	{info:dir}	the path of the current directory, including the base dir
-	{info:subdir}	the path of the current directory, not including the base dir
-	{info:version}	the version of AutoIndex
+	{info:dir}		the path of the current directory, including the base dir
+	{info:subdir}		the path of the current directory, not including the base dir
+	{info:version}		the version of AutoIndex
 	{info:page\_time}	the time (in milliseconds) it took to generate the page
 
 All words from the language file:
@@ -78,23 +78,23 @@ All previously mentioned variables, plus:
 
 Properties for individual files:
 
-	{file:filename}		the name of the file or folder
-	{file:link}		the link to the file (using the ?dir and ?file parameters in the URL)
-	{file:file\_ext}		the file extension ("dir" for a directory)
-	{file:size}		the size (formatted as a string)
-	{file:bytes}		the size (in bytes)
-	{file:date}		the date modified (formatted as a string)
-	{file:a\_time}		date and time accessed
-	{file:m\_time}		date and time modified
-	{file:num\_subfiles}	for a directory, the number of files it contains
-		use {file:if:is\_real\_dir}{file:num\_subfiles}{end if}
-	{file:thumbnail}	for images, it will display a thumbnail
-	{file:md5\_link}		a link to get the md5sum of the file
-	{file:downloads}	the number of times this file has been downloaded
-	{file:description}	the description of the current file
-	{file:icon}		the icon image for the filetype
-	{file:parent\_dir}	the name of the file's parent directory
-	{file:tr\_class}		this returns "light\_row" or "dark\_row" for every other file
+	{file:filename}				the name of the file or folder
+	{file:link}				the link to the file (using the ?dir and ?file parameters in the URL)
+	{file:file\_ext}			the file extension ("dir" for a directory)
+	{file:size}				the size (formatted as a string)
+	{file:bytes}				the size (in bytes)
+	{file:date}				the date modified (formatted as a string)
+	{file:a\_time}				date and time accessed
+	{file:m\_time}				date and time modified
+	{file:num\_subfiles}			for a directory, the number of files it contains
+		Use {file:if:is\_real\_dir}{file:num\_subfiles}{end if}
+	{file:thumbnail}			for images, it will display a thumbnail
+	{file:md5\_link}			a link to get the md5sum of the file
+	{file:downloads}			the number of times this file has been downloaded
+	{file:description}			the description of the current file
+	{file:icon}				the icon image for the filetype
+	{file:parent\_dir}			the name of the file's parent directory
+	{file:tr\_class}			this returns "light\_row" or "dark\_row" for every other file
 	{file:if:is\_file} ... {end if}		true if it is a file
 	{file:if:is\_dir} ... {end if}		true if it is a folder or link to parent directory
 	{file:if:is\_real\_dir} ... {end if}	true if it is a folder
