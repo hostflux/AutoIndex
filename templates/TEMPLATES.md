@@ -99,7 +99,7 @@ Properties for individual files:
 	{file:if:is\_dir} ... {end if}		true if it is a folder or link to parent directory
 	{file:if:is\_real\_dir} ... {end if}	true if it is a folder
 	{file:if:is\_parent\_dir} ... {end if}	true if it is a link to parent directory
-	{do\_every:x} ... {end do\_every} where x is a number.
-		The code in between will be displayed every x files.
+	{do\_every:x} ... {end do\_every} where x is a number
+		The code in between will be displayed every x files
 
-__[AutoIndex PHP Script](https://github.com/hostflux/AutoIndex), by [Hostflux LLC](https://hostflux.com)__
+**[AutoIndex PHP Script](https://github.com/hostflux/AutoIndex)**
