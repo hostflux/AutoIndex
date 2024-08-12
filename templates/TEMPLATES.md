@@ -76,7 +76,7 @@ If-statements:
 
 	[1] File name to store visitor traffic
 	[2] File name with folder and/or file descriptions
-	[3] File name to store downloads
+	[3] File name to store download counts
  	
 	To end an if-statement, use {end if:varibale}
 	For example, {if:days_new} ... {end if:days_new}
