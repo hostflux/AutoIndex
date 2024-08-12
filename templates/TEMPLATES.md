@@ -69,9 +69,9 @@ If-statements:
 | `{if:days_new}`               | `days_new` = true / false                  |
 | `{if:thumbnail_height}`       | `thumbnail_height` = pixels / false        |
 | `{if:icon_path}`              | `icon_path` = icon path / false            |
-| `{if:log_file}`               | `log_file` = file name / false [1]         |
-| `{if:description_file}`       | `description_file` = file name / false [2] |
-| `{if:download_count}`         | `download_count` = file name / false [3]   |
+| `{if:log_file}`               | `log_file` = file name [1] / false         |
+| `{if:description_file}`       | `description_file` = file name [2] / false |
+| `{if:download_count}`         | `download_count` = file name [3] / false   |
 | `{if:entries_per_page}`       | `entries_per_page` = number / false        |
 
 	[1] File name to store visitor traffic
