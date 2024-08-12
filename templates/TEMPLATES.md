@@ -74,7 +74,7 @@ If-statements:
 | `{if:download_count}`         | `download_count` = file name [3] / false   |
 | `{if:entries_per_page}`       | `entries_per_page` = number / false        |
 
-	[1] File name to store visitor traffic
+	[1] File name to log visitor traffic
 	[2] File name with folder and/or file descriptions
 	[3] File name to store download counts
  	
