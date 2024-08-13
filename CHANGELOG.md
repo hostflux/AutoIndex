@@ -11,10 +11,10 @@
 
 **[Hostflux LLC](https://hostflux.com)**
 
-**Version 2.2.4 revision 2** (2021-Jun-04)  
+**Version 2.2.4 revision 2** (2022-May-12)  
 (+) Added support for PHP 8.0.x and higher
 
-**Version 2.2.4 revision 1** (2018-Nov-13)  
+**Version 2.2.4 revision 1** (2018-Aug-02)  
 (+) Added support for PHP 7.0.x and higher
 
 **[Justin Hagstrom](http://autoindex.sourceforge.net)**
