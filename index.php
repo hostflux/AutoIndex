@@ -172,6 +172,9 @@ function simple_display($text, $title = 'Error on Page')
 
 <!--
 
+Powered by AutoIndex PHP Script (version ' . VERSION . ' revised)
+https://github.com/hostflux/AutoIndex
+
 Powered by AutoIndex PHP Script (version ' . VERSION . ')
 Copyright (C) 2002-2007 Justin Hagstrom
 http://autoindex.sourceforge.net
