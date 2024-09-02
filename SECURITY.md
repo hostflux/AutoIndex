@@ -2,7 +2,7 @@
 
 ## Security
 
-Report security issues using the [enquiries form at Hostflux LLC](https://hostflux.com/index.php#ContactUs)
+Report issues using the [enquiries form at Hostflux.com](https://hostflux.com/index.php#ContactUs)
 
 ---
 
