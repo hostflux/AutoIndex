@@ -1,15 +1,6 @@
 <?php
 
 /**
- * AutoIndex PHP Script (version 2.2.4 revised)
- * revision 1 (2018Aug02), revision 2 (2022May12), revision 3 (2024Ju101)
- * https://github.com/hostflux/AutoIndex
- *
- * 2025Jul20: Performance fix //1 ...
- * Copilot: cached instead of recalculating Item::get_basename($m) on each loop iteration
- */
-
-/**
  * @package AutoIndex
  *
  * @copyright Copyright (C) 2002-2004 Justin Hagstrom
@@ -174,19 +165,17 @@ class DirectoryList implements Iterator
 	 * @param array $array The array to search
 	 * @return bool True if $string matches any elements in $array
 	 */
-	public static function match_in_array($string, &$array) //1
+	public static function match_in_array($string, &$array)
 	{
 		$string = Item::get_basename($string);
 		static $replace = array(
 			'\*' => '[^\/]*',
 			'\+' => '[^\/]+',
 			'\?' => '[^\/]?');
-
-		$normalizedString = Item::get_basename($string);
-
-		foreach ($array as $m) {
-			$pattern = '/^' . strtr(preg_quote(Item::get_basename($m), '/'), $replace) . '$/i';
-			if (preg_match($pattern, $normalizedString)) {
+		foreach ($array as $m)
+		{
+			if (preg_match('/^' . strtr(preg_quote(Item::get_basename($m), '/'), $replace) . '$/i', $string))
+			{
 				return true;
 			}
 		}
@@ -198,25 +187,26 @@ class DirectoryList implements Iterator
 	 * @param bool $is_file
 	 * @return bool True if $t is listed as a hidden file
 	 */
-	public static function is_hidden($t, $is_file = true) {
-		global $you, $hidden_files, $show_only_these_files; //1
+	public static function is_hidden($t, $is_file = true)
+	{
 		$t = Item::get_basename($t);
-
-		if ($t == '.' || $t == '') return true; //1
-		if ($you -> level >= ADMIN) return false; //1 allow admins to view hidden files
-		if ($is_file && count($show_only_these_files)) { //1
-			if (self::$show_only_these_files === null) { //1
-				self::$show_only_these_files = self::match_in_array(null, $show_only_these_files); //1
-			}
-			return !preg_match(self::$show_only_these_files, $t); //1
+		if ($t == '.' || $t == '')
+		{
+			return true;
 		}
-		if (self::$hidden_files === null) { //1
-			self::$hidden_files = self::match_in_array(null, $hidden_files); //1
+		global $you;
+		if ($you -> level >= ADMIN)
+		//allow admins to view hidden files
+		{
+			return false;
 		}
-		return preg_match(self::$hidden_files, $t); //1
+		global $hidden_files, $show_only_these_files;
+		if ($is_file && count($show_only_these_files))
+		{
+			return (!self::match_in_array($t, $show_only_these_files));
 		}
-	private static $show_only_these_files = null; //1
-	private static $hidden_files = null; //1
+		return self::match_in_array($t, $hidden_files);
+	}
 	
 	/**
 	 * @param string $var The key to look for
